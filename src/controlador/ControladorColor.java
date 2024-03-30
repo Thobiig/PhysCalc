@@ -13,12 +13,16 @@ import javax.swing.JPanel;
 import modelo.ModeloColor;
 
 public class ControladorColor extends ModeloColor {
-
+    /*
+        Las variables son heredadas de modelo color, por ende no es necesario
+        agregar colores nuevos acá, sino cambiar los que ya están en la clase
+        ModeloColores dentro del paquete modelo
+    */
     public ControladorColor() {
 
     }
 
-    //----- métodos header ------//
+    //----- Métodos para cambiar colores del header ------//
     public void headerColorear(Container container) {
         Component[] components = container.getComponents();
         for (Component component : components) {
@@ -51,7 +55,7 @@ public class ControladorColor extends ModeloColor {
         texto.setForeground(getLetHeaderAlter());
     }
 
-    //----- métodos menú -----//
+    //----- Métodos para cambiar los colores del menu -----//
     public void menuColorear(Container container) {
         Component[] components = container.getComponents();
         for (Component component : components) {
@@ -84,7 +88,10 @@ public class ControladorColor extends ModeloColor {
         menuSale(texto);
     }
 
-    //------ Métodos cambiar color imagenes ------//
+    /* Estos métodos funcionan para cambiar el color de las imagenes dentro de 
+       un paquete en especifico, se utiliza para los elementos gráficos dentro 
+       del programa, como lo es la base del menú   
+    */
     public void cambiarColorPaquete() {
         // Ruta del paquete
         String paquete = "C:/Users/gguti/OneDrive/Documentos/Proyecto/PhysCalc/src/imagenes/utiliarios";
@@ -114,7 +121,9 @@ public class ControladorColor extends ModeloColor {
             }
         }
     }
-
+    /* Este es el metodo que cambia el color de las imagenes, recorre todos los
+       los pixeles (no transparentes )dentro de esta y los cambia de color
+    */
     private static void cambiarColor(BufferedImage imagen) {
         int width = imagen.getWidth();
         int height = imagen.getHeight();
@@ -124,10 +133,16 @@ public class ControladorColor extends ModeloColor {
                 int rgba = imagen.getRGB(x, y);
                 Color color = new Color(rgba, true);
                 if (color.getAlpha() > 0) {
+                    // Acá se elige el color a utilizar
                     imagen.setRGB(x, y, getMenu().getRGB());
                 }
             }
         }
     }
+    /* Aquí termina los métodos para cambiar de color las ilustraciones
+       utilizadas dentro del programa. Solo deben llamarse una vez en la clase
+       main para cambiar el color de las ilustraciones y luego retirarse para
+       no sobrecargar el proyecto
+    */
 
 }

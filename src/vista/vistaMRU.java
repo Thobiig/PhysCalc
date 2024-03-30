@@ -4,7 +4,7 @@ import controlador.ControladorColor;
 import controlador.ControladorLongitud;
 import controlador.ControladorMovRecUni;
 import controlador.ControladorTiempo;
-import controlador.ControladorUtilidades;
+import controlador.ControladorUtilidad;
 import controlador.ControladorVelocidad;
 import java.awt.Color;
 import javax.swing.JOptionPane;
@@ -16,7 +16,7 @@ public class vistaMRU extends javax.swing.JPanel {
     private ControladorTiempo ct = new ControladorTiempo();
     private ControladorVelocidad cv = new ControladorVelocidad();
     private ControladorMovRecUni mru = new ControladorMovRecUni();
-    private ControladorUtilidades ul = new ControladorUtilidades();
+    private ControladorUtilidad ul = new ControladorUtilidad();
 
     public vistaMRU() {
         initComponents();
@@ -544,9 +544,6 @@ public class vistaMRU extends javax.swing.JPanel {
             mru = new ControladorMovRecUni(tiempoInicial, tiempoFinal, 0, posInicial, posFinal);
             //----- Condición para mostrar cálculos -----//
             if (tiempoFinal > tiempoInicial) {
-                double diferenciaPosicion = posFinal - posInicial;
-                double diferenciaTiempo = tiempoFinal - tiempoInicial;
-
                 JOptionPane.showMessageDialog(this, "Velocidad calculada. \n" + mru.calcularVelocidad() + " m/s");
             }
         } catch (Exception e) {
@@ -586,7 +583,6 @@ public class vistaMRU extends javax.swing.JPanel {
                     cmbVelocidad.getSelectedItem().toString());
             //----- Guardar datos -----//        
             mru = new ControladorMovRecUni(0, 0, velocidad, posInicial, posFinal);
-            
             JOptionPane.showMessageDialog(this,
                     "Tiempo calculado. \n" + mru.calcularTiempo() + " s");
         } catch (Exception e) {

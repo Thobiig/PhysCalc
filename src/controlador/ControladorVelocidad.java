@@ -24,12 +24,12 @@ public class ControladorVelocidad {
     
     //-----  Método para rellenar los combobox -----//
     public static void rellenarCombo(JComboBox<String> comboBox) {
-        /* Iniciar los datos */
+        // Iniciar los datos
         String [] datos = {"m/s", "km/h", "mi/h"};
-        /* Limpiar el JComboBox */
+        // Limpiar el JComboBox
         comboBox.removeAllItems();
-
-        /* Rellenar el JComboBox con los elementos del vector */
+        
+        // Rellenar el JComboBox con los elementos del vector
         for (String dato : datos) {
             comboBox.addItem(dato);
         }

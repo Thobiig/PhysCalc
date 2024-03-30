@@ -9,7 +9,7 @@ public class Inicio extends javax.swing.JFrame {
     private ControladorColor color = new ControladorColor();
     
     public Inicio() {
-        color.cambiarColorPaquete();
+        //color.cambiarColorPaquete(); // Cambiar color a los elementos gráficos
         initComponents();
         color.headerColorear(header);
         resetearTodo();
