@@ -6,7 +6,6 @@ import controlador.ControladorMovRecUni;
 import controlador.ControladorTiempo;
 import controlador.ControladorUtilidad;
 import controlador.ControladorVelocidad;
-import java.awt.Color;
 import javax.swing.JOptionPane;
 
 public class vistaMRU extends javax.swing.JPanel {
@@ -28,10 +27,8 @@ public class vistaMRU extends javax.swing.JPanel {
 
     //----- seleccion del switch -----//
     private String seleccion = "";
-    //----- Paleta de colores -----//
-    private Color letrasBase = color.getLetHeaderBase();
-    private int numLetrasBase = letrasBase.getRGB();
-    //----- variables -----//
+
+    //----- Variables ------//
     private double posInicial;
     private double posFinal;
     private double velocidad;
@@ -403,24 +400,24 @@ public class vistaMRU extends javax.swing.JPanel {
     }//GEN-LAST:event_btnVelocidadMousePressed
 
     private void btnVelocidadMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnVelocidadMouseExited
-        if (labelDistancia.getForeground().getRGB() != numLetrasBase
-                || labelTiempo.getForeground().getRGB() != numLetrasBase)
+        if (labelDistancia.getForeground().getRGB() != color.getLetMenu().getRGB()
+                || labelTiempo.getForeground().getRGB() != color.getLetMenu().getRGB())
             color.menuSale(labelVelocidad);
     }//GEN-LAST:event_btnVelocidadMouseExited
 
     private void btnVelocidadMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnVelocidadMouseEntered
-        if (labelVelocidad.getForeground().getRGB() == numLetrasBase)
+        if (labelVelocidad.getForeground().getRGB() == color.getLetMenu().getRGB())
             color.menuEntra(labelVelocidad);
     }//GEN-LAST:event_btnVelocidadMouseEntered
 
     private void btnDistanciaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDistanciaMouseEntered
-        if (labelDistancia.getForeground().getRGB() == numLetrasBase)
+        if (labelDistancia.getForeground().getRGB() == color.getLetMenu().getRGB())
             color.menuEntra(labelDistancia);
     }//GEN-LAST:event_btnDistanciaMouseEntered
 
     private void btnDistanciaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDistanciaMouseExited
-        if (labelVelocidad.getForeground().getRGB() != numLetrasBase
-                || labelTiempo.getForeground().getRGB() != numLetrasBase)
+        if (labelVelocidad.getForeground().getRGB() != color.getLetMenu().getRGB()
+                || labelTiempo.getForeground().getRGB() != color.getLetMenu().getRGB())
             color.menuSale(labelDistancia);
     }//GEN-LAST:event_btnDistanciaMouseExited
 
@@ -439,13 +436,13 @@ public class vistaMRU extends javax.swing.JPanel {
     }//GEN-LAST:event_btnTiempoMousePressed
 
     private void btnTiempoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnTiempoMouseExited
-        if (labelVelocidad.getForeground().getRGB() != numLetrasBase
-                || labelDistancia.getForeground().getRGB() != numLetrasBase)
+        if (labelVelocidad.getForeground().getRGB() != color.getLetMenu().getRGB()
+                || labelDistancia.getForeground().getRGB() != color.getLetMenu().getRGB())
             color.menuSale(labelTiempo);
     }//GEN-LAST:event_btnTiempoMouseExited
 
     private void btnTiempoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnTiempoMouseEntered
-        if (labelTiempo.getForeground().getRGB() == numLetrasBase)
+        if (labelTiempo.getForeground().getRGB() == color.getLetMenu().getRGB())
             color.menuEntra(labelTiempo);
     }//GEN-LAST:event_btnTiempoMouseEntered
 

@@ -7,10 +7,11 @@ import controlador.ControladorColor;
 public class Inicio extends javax.swing.JFrame {
 
     private ControladorColor color = new ControladorColor();
-    
+
     public Inicio() {
         //color.cambiarColorPaquete(); // Cambiar color a los elementos gráficos
         initComponents();
+        setLocationRelativeTo(null);
         color.headerColorear(header);
         resetearTodo();
         mostrarMRU();
@@ -262,7 +263,7 @@ public class Inicio extends javax.swing.JFrame {
         if (labelMRUA.getForeground().getRGB() != numLetrasBase || labelCaida.getForeground().getRGB() != numLetrasBase
                 || labelVertical.getForeground().getRGB() != numLetrasBase || labelParabolico.getForeground().getRGB() != numLetrasBase
                 || labelMCU.getForeground().getRGB() != numLetrasBase || labelMCUA.getForeground().getRGB() != numLetrasBase)
-            color.headerSale( labelMRU);
+            color.headerSale(labelMRU);
     }//GEN-LAST:event_btnMRUMouseExited
 
     private void btnMRUMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMRUMousePressed
@@ -280,8 +281,8 @@ public class Inicio extends javax.swing.JFrame {
     }//GEN-LAST:event_btnMRUAMousePressed
 
     private void btnCaidaLibreMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCaidaLibreMouseEntered
-        if (labelCaida.getForeground().getRGB() == numLetrasBase){
-            color.headerEntra( labelCaida);
+        if (labelCaida.getForeground().getRGB() == numLetrasBase) {
+            color.headerEntra(labelCaida);
             color.headerEntra(labelLibre);
         }
     }//GEN-LAST:event_btnCaidaLibreMouseEntered
@@ -289,9 +290,9 @@ public class Inicio extends javax.swing.JFrame {
     private void btnCaidaLibreMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCaidaLibreMouseExited
         if (labelMRU.getForeground().getRGB() != numLetrasBase || labelMRUA.getForeground().getRGB() != numLetrasBase
                 || labelVertical.getForeground().getRGB() != numLetrasBase || labelParabolico.getForeground().getRGB() != numLetrasBase
-                || labelMCU.getForeground().getRGB() != numLetrasBase || labelMCUA.getForeground().getRGB() != numLetrasBase){
-                    color.headerSale( labelCaida);
-                    color.headerSale( labelLibre);
+                || labelMCU.getForeground().getRGB() != numLetrasBase || labelMCUA.getForeground().getRGB() != numLetrasBase) {
+            color.headerSale(labelCaida);
+            color.headerSale(labelLibre);
         }
     }//GEN-LAST:event_btnCaidaLibreMouseExited
 
@@ -305,8 +306,8 @@ public class Inicio extends javax.swing.JFrame {
 
     private void btnTiroVerticalMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnTiroVerticalMouseEntered
         if (labelVertical.getForeground().getRGB() == numLetrasBase) {
-            color.headerEntra( labelDisparo);
-            color.headerEntra( labelVertical);
+            color.headerEntra(labelDisparo);
+            color.headerEntra(labelVertical);
         }
     }//GEN-LAST:event_btnTiroVerticalMouseEntered
 
@@ -314,8 +315,8 @@ public class Inicio extends javax.swing.JFrame {
         if (labelMRUA.getForeground().getRGB() != numLetrasBase || labelCaida.getForeground().getRGB() != numLetrasBase
                 || labelMRU.getForeground().getRGB() != numLetrasBase || labelParabolico.getForeground().getRGB() != numLetrasBase
                 || labelMCU.getForeground().getRGB() != numLetrasBase || labelMCUA.getForeground().getRGB() != numLetrasBase) {
-            color.headerSale( labelDisparo);
-            color.headerSale( labelVertical);
+            color.headerSale(labelDisparo);
+            color.headerSale(labelVertical);
         }
 
     }//GEN-LAST:event_btnTiroVerticalMouseExited
@@ -325,22 +326,22 @@ public class Inicio extends javax.swing.JFrame {
         //----- Colorear y descolorear botones -----//
         resetearTodo();
         color.headerSeleccionar(btnTiroVertical, labelDisparo);
-        color.headerSeleccionar(btnTiroVertical, labelVertical);
+        color.headerEntra(labelVertical);
     }//GEN-LAST:event_btnTiroVerticalMousePressed
 
     private void btnMovParabolicoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMovParabolicoMouseEntered
-        if (labelParabolico.getForeground().getRGB() == numLetrasBase){
-            color.headerEntra( labelMovimiento);
-            color.headerEntra( labelParabolico);
-        }      
+        if (labelParabolico.getForeground().getRGB() == numLetrasBase) {
+            color.headerEntra(labelMovimiento);
+            color.headerEntra(labelParabolico);
+        }
     }//GEN-LAST:event_btnMovParabolicoMouseEntered
 
     private void btnMovParabolicoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMovParabolicoMouseExited
         if (labelMRUA.getForeground().getRGB() != numLetrasBase || labelCaida.getForeground().getRGB() != numLetrasBase
                 || labelVertical.getForeground().getRGB() != numLetrasBase || labelMRU.getForeground().getRGB() != numLetrasBase
-                || labelMCU.getForeground().getRGB() != numLetrasBase || labelMCUA.getForeground().getRGB() != numLetrasBase){
-            color.headerSale( labelMovimiento);
-            color.headerSale( labelParabolico);
+                || labelMCU.getForeground().getRGB() != numLetrasBase || labelMCUA.getForeground().getRGB() != numLetrasBase) {
+            color.headerSale(labelMovimiento);
+            color.headerSale(labelParabolico);
         }
     }//GEN-LAST:event_btnMovParabolicoMouseExited
 
@@ -354,14 +355,14 @@ public class Inicio extends javax.swing.JFrame {
 
     private void btnMCUMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMCUMouseEntered
         if (labelMCU.getForeground().getRGB() == numLetrasBase)
-            color.headerEntra( labelMCU);
+            color.headerEntra(labelMCU);
     }//GEN-LAST:event_btnMCUMouseEntered
 
     private void btnMCUMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMCUMouseExited
         if (labelMRUA.getForeground().getRGB() != numLetrasBase || labelCaida.getForeground().getRGB() != numLetrasBase
                 || labelVertical.getForeground().getRGB() != numLetrasBase || labelParabolico.getForeground().getRGB() != numLetrasBase
                 || labelMRU.getForeground().getRGB() != numLetrasBase || labelMCUA.getForeground().getRGB() != numLetrasBase)
-            color.headerSale( labelMCU);
+            color.headerSale(labelMCU);
     }//GEN-LAST:event_btnMCUMouseExited
 
     private void btnMCUMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMCUMousePressed
@@ -459,23 +460,53 @@ public class Inicio extends javax.swing.JFrame {
     }
 
     private void mostrarCaidaLibre() {
-
+        vistaCL vista = new vistaCL();
+        vista.setSize(890, 470);
+        vista.setLocation(0, 0);
+        bg.removeAll();
+        bg.add(vista, BorderLayout.CENTER);
+        bg.revalidate();
+        bg.repaint();
     }
 
     private void mostrarTiroVertical() {
-
+        vistaTV vista = new vistaTV();
+        vista.setSize(890, 470);
+        vista.setLocation(0, 0);
+        bg.removeAll();
+        bg.add(vista, BorderLayout.CENTER);
+        bg.revalidate();
+        bg.repaint();
     }
 
     private void mostrarMovParabolico() {
-
+        vistaMP vista = new vistaMP();
+        vista.setSize(890, 470);
+        vista.setLocation(0, 0);
+        bg.removeAll();
+        bg.add(vista, BorderLayout.CENTER);
+        bg.revalidate();
+        bg.repaint();
     }
 
     private void mostrarMCU() {
-
+        vistaMCU vista = new vistaMCU();
+        vista.setSize(890, 470);
+        vista.setLocation(0, 0);
+        bg.removeAll();
+        bg.add(vista, BorderLayout.CENTER);
+        bg.revalidate();
+        bg.repaint();
     }
 
     private void mostrarMCUA() {
-
+        vistaMCUA vista = new vistaMCUA();
+        vista.setSize(890, 470);
+        vista.setLocation(0, 0);
+        bg.removeAll();
+        bg.add(vista, BorderLayout.CENTER);
+        bg.revalidate();
+        bg.repaint();
     }
     //----- Fin del relleno ------//
 
@@ -492,8 +523,7 @@ public class Inicio extends javax.swing.JFrame {
         color.headerRemover(btnMCU, labelMCU);
         color.headerRemover(btnMCUA, labelMCUA);
     }
-    
-    
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel bg;

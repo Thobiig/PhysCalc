@@ -3,15 +3,16 @@ package vista;
 import controlador.ControladorColor;
 import java.awt.BorderLayout;
 
-public class vistaMRUA extends javax.swing.JPanel {
+public class vistaTV extends javax.swing.JPanel {
 
     private ControladorColor color = new ControladorColor();
 
-    public vistaMRUA() {
+    public vistaTV() {
         initComponents();
         color.menuSeleccionar(btnVelocidadInicial, labelVelocidadInicial);
         mostrarVelocidadInicial();
     }
+
 
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -20,14 +21,12 @@ public class vistaMRUA extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         btnVelocidadInicial = new javax.swing.JPanel();
         labelVelocidadInicial = new javax.swing.JLabel();
-        btnVelocidadFinal = new javax.swing.JPanel();
-        labelVelocidadFinal = new javax.swing.JLabel();
-        btnDistancia = new javax.swing.JPanel();
-        labelDistancia = new javax.swing.JLabel();
+        btnAltura = new javax.swing.JPanel();
+        labelAltura = new javax.swing.JLabel();
+        btnGravedad = new javax.swing.JPanel();
+        labelGravedad = new javax.swing.JLabel();
         btnTiempo = new javax.swing.JPanel();
         labelTiempo = new javax.swing.JLabel();
-        btnAceleracion = new javax.swing.JPanel();
-        labelAceleracion = new javax.swing.JLabel();
         labelCuadro = new javax.swing.JLabel();
         contenido = new javax.swing.JPanel();
 
@@ -66,54 +65,54 @@ public class vistaMRUA extends javax.swing.JPanel {
 
         Menu.add(btnVelocidadInicial, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 70, 152, 40));
 
-        btnVelocidadFinal.setBackground(new java.awt.Color(231, 231, 231));
-        btnVelocidadFinal.setMaximumSize(new java.awt.Dimension(135, 40));
-        btnVelocidadFinal.setMinimumSize(new java.awt.Dimension(135, 40));
-        btnVelocidadFinal.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnAltura.setBackground(new java.awt.Color(231, 231, 231));
+        btnAltura.setMaximumSize(new java.awt.Dimension(135, 40));
+        btnAltura.setMinimumSize(new java.awt.Dimension(135, 40));
+        btnAltura.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnVelocidadFinalMouseEntered(evt);
+                btnAlturaMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnVelocidadFinalMouseExited(evt);
+                btnAlturaMouseExited(evt);
             }
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                btnVelocidadFinalMousePressed(evt);
+                btnAlturaMousePressed(evt);
             }
         });
-        btnVelocidadFinal.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        btnAltura.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        labelVelocidadFinal.setFont(new java.awt.Font("Montserrat Medium", 0, 15)); // NOI18N
-        labelVelocidadFinal.setForeground(new java.awt.Color(0, 0, 0));
-        labelVelocidadFinal.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelVelocidadFinal.setText("Velocidad final");
-        btnVelocidadFinal.add(labelVelocidadFinal, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 155, 40));
+        labelAltura.setFont(new java.awt.Font("Montserrat Medium", 0, 15)); // NOI18N
+        labelAltura.setForeground(new java.awt.Color(0, 0, 0));
+        labelAltura.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelAltura.setText("Altura");
+        btnAltura.add(labelAltura, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 155, 40));
 
-        Menu.add(btnVelocidadFinal, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 110, 152, 40));
+        Menu.add(btnAltura, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 110, 152, 40));
 
-        btnDistancia.setBackground(new java.awt.Color(231, 231, 231));
-        btnDistancia.setMaximumSize(new java.awt.Dimension(135, 40));
-        btnDistancia.setMinimumSize(new java.awt.Dimension(135, 40));
-        btnDistancia.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnGravedad.setBackground(new java.awt.Color(231, 231, 231));
+        btnGravedad.setMaximumSize(new java.awt.Dimension(135, 40));
+        btnGravedad.setMinimumSize(new java.awt.Dimension(135, 40));
+        btnGravedad.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnDistanciaMouseEntered(evt);
+                btnGravedadMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnDistanciaMouseExited(evt);
+                btnGravedadMouseExited(evt);
             }
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                btnDistanciaMousePressed(evt);
+                btnGravedadMousePressed(evt);
             }
         });
-        btnDistancia.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        btnGravedad.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        labelDistancia.setBackground(new java.awt.Color(231, 231, 231));
-        labelDistancia.setFont(new java.awt.Font("Montserrat Medium", 0, 15)); // NOI18N
-        labelDistancia.setForeground(new java.awt.Color(0, 0, 0));
-        labelDistancia.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelDistancia.setText("Distancia");
-        btnDistancia.add(labelDistancia, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 155, 40));
+        labelGravedad.setBackground(new java.awt.Color(231, 231, 231));
+        labelGravedad.setFont(new java.awt.Font("Montserrat Medium", 0, 15)); // NOI18N
+        labelGravedad.setForeground(new java.awt.Color(0, 0, 0));
+        labelGravedad.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelGravedad.setText("Gravedad");
+        btnGravedad.add(labelGravedad, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 155, 40));
 
-        Menu.add(btnDistancia, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 150, 152, 40));
+        Menu.add(btnGravedad, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 150, 152, 40));
 
         btnTiempo.setBackground(new java.awt.Color(231, 231, 231));
         btnTiempo.setMaximumSize(new java.awt.Dimension(135, 40));
@@ -140,36 +139,11 @@ public class vistaMRUA extends javax.swing.JPanel {
 
         Menu.add(btnTiempo, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 190, 152, 40));
 
-        btnAceleracion.setBackground(new java.awt.Color(231, 231, 231));
-        btnAceleracion.setMaximumSize(new java.awt.Dimension(135, 40));
-        btnAceleracion.setMinimumSize(new java.awt.Dimension(135, 40));
-        btnAceleracion.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnAceleracionMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnAceleracionMouseExited(evt);
-            }
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                btnAceleracionMousePressed(evt);
-            }
-        });
-        btnAceleracion.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        labelAceleracion.setBackground(new java.awt.Color(231, 231, 231));
-        labelAceleracion.setFont(new java.awt.Font("Montserrat Medium", 0, 15)); // NOI18N
-        labelAceleracion.setForeground(new java.awt.Color(0, 0, 0));
-        labelAceleracion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelAceleracion.setText("Aceleración");
-        btnAceleracion.add(labelAceleracion, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 155, 40));
-
-        Menu.add(btnAceleracion, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 230, 152, 40));
-
         labelCuadro.setBackground(new java.awt.Color(0, 0, 0));
         labelCuadro.setFont(new java.awt.Font("Montserrat Medium", 0, 15)); // NOI18N
         labelCuadro.setForeground(new java.awt.Color(0, 0, 0));
         labelCuadro.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelCuadro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/utiliarios/menuMRUA.png"))); // NOI18N
+        labelCuadro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/utiliarios/menuDisparoVertical.png"))); // NOI18N
         labelCuadro.setMaximumSize(new java.awt.Dimension(135, 40));
         labelCuadro.setMinimumSize(new java.awt.Dimension(135, 40));
         labelCuadro.setPreferredSize(new java.awt.Dimension(135, 40));
@@ -221,10 +195,9 @@ public class vistaMRUA extends javax.swing.JPanel {
     }//GEN-LAST:event_btnVelocidadInicialMouseEntered
 
     private void btnVelocidadInicialMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnVelocidadInicialMouseExited
-        if (labelDistancia.getForeground().getRGB() != color.getLetMenu().getRGB()
+        if (labelGravedad.getForeground().getRGB() != color.getLetMenu().getRGB()
                 || labelTiempo.getForeground().getRGB() != color.getLetMenu().getRGB()
-                || labelAceleracion.getForeground().getRGB() != color.getLetMenu().getRGB()
-                || labelVelocidadFinal.getForeground().getRGB() != color.getLetMenu().getRGB())
+                || labelAltura.getForeground().getRGB() != color.getLetMenu().getRGB())
             color.menuSale(labelVelocidadInicial);
     }//GEN-LAST:event_btnVelocidadInicialMouseExited
 
@@ -235,25 +208,24 @@ public class vistaMRUA extends javax.swing.JPanel {
         color.menuSeleccionar(btnVelocidadInicial, labelVelocidadInicial);
     }//GEN-LAST:event_btnVelocidadInicialMousePressed
 
-    private void btnDistanciaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDistanciaMouseEntered
-        if (labelDistancia.getForeground().getRGB() == color.getLetMenu().getRGB())
-            color.menuEntra(labelDistancia);
-    }//GEN-LAST:event_btnDistanciaMouseEntered
+    private void btnGravedadMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnGravedadMouseEntered
+        if (labelGravedad.getForeground().getRGB() == color.getLetMenu().getRGB())
+            color.menuEntra(labelGravedad);
+    }//GEN-LAST:event_btnGravedadMouseEntered
 
-    private void btnDistanciaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDistanciaMouseExited
+    private void btnGravedadMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnGravedadMouseExited
         if (labelVelocidadInicial.getForeground().getRGB() != color.getLetMenu().getRGB()
                 || labelTiempo.getForeground().getRGB() != color.getLetMenu().getRGB()
-                || labelAceleracion.getForeground().getRGB() != color.getLetMenu().getRGB()
-                || labelVelocidadFinal.getForeground().getRGB() != color.getLetMenu().getRGB())
-            color.menuSale(labelDistancia);
-    }//GEN-LAST:event_btnDistanciaMouseExited
+                || labelAltura.getForeground().getRGB() != color.getLetMenu().getRGB())
+            color.menuSale(labelGravedad);
+    }//GEN-LAST:event_btnGravedadMouseExited
 
-    private void btnDistanciaMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDistanciaMousePressed
-        mostrarDistancia();
+    private void btnGravedadMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnGravedadMousePressed
+        mostrarGravedad();
         //----- Colorear y descolorear botones -----//
         resetearTodo();
-        color.menuSeleccionar(btnDistancia, labelDistancia);
-    }//GEN-LAST:event_btnDistanciaMousePressed
+        color.menuSeleccionar(btnGravedad, labelGravedad);
+    }//GEN-LAST:event_btnGravedadMousePressed
 
     private void btnTiempoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnTiempoMouseEntered
         if (labelTiempo.getForeground().getRGB() == color.getLetMenu().getRGB())
@@ -262,9 +234,8 @@ public class vistaMRUA extends javax.swing.JPanel {
 
     private void btnTiempoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnTiempoMouseExited
         if (labelVelocidadInicial.getForeground().getRGB() != color.getLetMenu().getRGB()
-                || labelDistancia.getForeground().getRGB() != color.getLetMenu().getRGB()
-                || labelAceleracion.getForeground().getRGB() != color.getLetMenu().getRGB()
-                || labelVelocidadFinal.getForeground().getRGB() != color.getLetMenu().getRGB())
+                || labelGravedad.getForeground().getRGB() != color.getLetMenu().getRGB()
+                || labelAltura.getForeground().getRGB() != color.getLetMenu().getRGB())
             color.menuSale(labelTiempo);
     }//GEN-LAST:event_btnTiempoMouseExited
 
@@ -275,62 +246,38 @@ public class vistaMRUA extends javax.swing.JPanel {
         color.menuSeleccionar(btnTiempo, labelTiempo);
     }//GEN-LAST:event_btnTiempoMousePressed
 
-    private void btnAceleracionMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAceleracionMouseEntered
-        if (labelAceleracion.getForeground().getRGB() == color.getLetMenu().getRGB())
-            color.menuEntra(labelAceleracion);
-    }//GEN-LAST:event_btnAceleracionMouseEntered
+    private void btnAlturaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAlturaMouseEntered
+        if (labelAltura.getForeground().getRGB() == color.getLetMenu().getRGB())
+            color.menuEntra(labelAltura);
+    }//GEN-LAST:event_btnAlturaMouseEntered
 
-    private void btnAceleracionMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAceleracionMouseExited
+    private void btnAlturaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAlturaMouseExited
         if (labelVelocidadInicial.getForeground().getRGB() != color.getLetMenu().getRGB()
-                || labelDistancia.getForeground().getRGB() != color.getLetMenu().getRGB()
-                || labelTiempo.getForeground().getRGB() != color.getLetMenu().getRGB()
-                || labelVelocidadFinal.getForeground().getRGB() != color.getLetMenu().getRGB())
-            color.menuSale(labelAceleracion);
-    }//GEN-LAST:event_btnAceleracionMouseExited
+                || labelGravedad.getForeground().getRGB() != color.getLetMenu().getRGB()
+                || labelTiempo.getForeground().getRGB() != color.getLetMenu().getRGB())
+            color.menuSale(labelAltura);
+    }//GEN-LAST:event_btnAlturaMouseExited
 
-    private void btnAceleracionMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAceleracionMousePressed
-        mostrarAceleracion();
+    private void btnAlturaMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAlturaMousePressed
+        mostrarAltura();
         //----- Colorear y descolorear botones -----//
         resetearTodo();
-        color.menuSeleccionar(btnAceleracion, labelAceleracion);
-    }//GEN-LAST:event_btnAceleracionMousePressed
-
-    private void btnVelocidadFinalMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnVelocidadFinalMouseEntered
-        if (labelVelocidadFinal.getForeground().getRGB() == color.getLetMenu().getRGB())
-            color.menuEntra(labelVelocidadFinal);
-    }//GEN-LAST:event_btnVelocidadFinalMouseEntered
-
-    private void btnVelocidadFinalMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnVelocidadFinalMouseExited
-        if (labelVelocidadInicial.getForeground().getRGB() != color.getLetMenu().getRGB()
-                || labelDistancia.getForeground().getRGB() != color.getLetMenu().getRGB()
-                || labelTiempo.getForeground().getRGB() != color.getLetMenu().getRGB()
-                || labelAceleracion.getForeground().getRGB() != color.getLetMenu().getRGB())
-            color.menuSale(labelVelocidadFinal);
-    }//GEN-LAST:event_btnVelocidadFinalMouseExited
-
-    private void btnVelocidadFinalMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnVelocidadFinalMousePressed
-        mostrarVelocidadFinal();
-        //----- Colorear y descolorear botones -----//
-        resetearTodo();
-        color.menuSeleccionar(btnVelocidadFinal, labelVelocidadFinal);
-    }//GEN-LAST:event_btnVelocidadFinalMousePressed
+        color.menuSeleccionar(btnAltura, labelAltura);
+    }//GEN-LAST:event_btnAlturaMousePressed
 
     //----- Rellenar paneles ------//
     private void mostrarVelocidadInicial() {
-        /*vista.mrua.VelocidadInicial vista = new vista.mrua.VelocidadInicial();
+        /*vista.tiroVertical.VelocidadInicial vista = new vista.tiroVertical.VelocidadInicial();
         vista.setSize(720, 470);
         vista.setLocation(0, 0);
         contenido.removeAll();
         contenido.add(vista, BorderLayout.CENTER);
         contenido.revalidate();
         contenido.repaint();*/
-    }
-
-    private void mostrarVelocidadFinal() {
 
     }
 
-    private void mostrarDistancia() {
+    private void mostrarAltura() {
 
     }
 
@@ -338,31 +285,31 @@ public class vistaMRUA extends javax.swing.JPanel {
 
     }
 
-    private void mostrarAceleracion() {
+    private void mostrarGravedad() {
 
     }
+    //----- Fin del relleno ------//
 
+    //----- Métodos de utilidad -----//
     private void resetearTodo() {
         color.menuRemover(btnVelocidadInicial, labelVelocidadInicial);
-        color.menuRemover(btnVelocidadFinal, labelVelocidadFinal);
-        color.menuRemover(btnDistancia, labelDistancia);
+        color.menuRemover(btnAltura, labelAltura);
         color.menuRemover(btnTiempo, labelTiempo);
-        color.menuRemover(btnAceleracion, labelAceleracion);
+        color.menuRemover(btnGravedad, labelGravedad);
     }
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Menu;
-    private javax.swing.JPanel btnAceleracion;
-    private javax.swing.JPanel btnDistancia;
+    private javax.swing.JPanel btnAltura;
+    private javax.swing.JPanel btnGravedad;
     private javax.swing.JPanel btnTiempo;
-    private javax.swing.JPanel btnVelocidadFinal;
     private javax.swing.JPanel btnVelocidadInicial;
     private javax.swing.JPanel contenido;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel labelAceleracion;
+    private javax.swing.JLabel labelAltura;
     private javax.swing.JLabel labelCuadro;
-    private javax.swing.JLabel labelDistancia;
+    private javax.swing.JLabel labelGravedad;
     private javax.swing.JLabel labelTiempo;
-    private javax.swing.JLabel labelVelocidadFinal;
     private javax.swing.JLabel labelVelocidadInicial;
     // End of variables declaration//GEN-END:variables
 }
